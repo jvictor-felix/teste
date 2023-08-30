@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <script src="js/nav.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Ouricuri News</h1>
+    </header>
+    <div id="diaria" class="container visible">
+       <span>ehehe</span>
+
+    </div>
+    <div id="todas" class="container">
+        <span>edasafasa</span>
+
+    </div>
+    <div id="avaliar" class="container">
+        <span>sajdkkdak</span>
+    </div>
+
+    <nav class="">
+        <ul>
+            <li class="one selecionado" onclick="teste2('selecionado', '.one', '.two', '.three'),
+            teste2('visible', '#diaria', '#todas', '#avaliar')">
+                <figure>
+                    <img class="icons" src="icons/icons8-para-você-24.png">
+                </figure>
+                <span>Principais</span>
+            </li>
+            <li class="two" onclick="teste2('selecionado', '.two', '.one', '.three'),
+            teste2('visible', '#todas', '#diaria', '#avaliar')">
+                <figure >
+                    <img class="icons" src="icons/icons8-notícias-32.png">
+                </figure>
+                <span>Todas</span>
+            </li>
+            <li class="three"onclick="teste2('selecionado', '.three', '.two', '.one'),
+            teste2('visible', '#avaliar', '#todas', '#diaria')">
+                <figure >
+                    <img class="icons" src="icons/icons8-pixel-star-32.png">
+                </figure>
+                <span>Avaliar</span>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
