@@ -28,20 +28,18 @@ const figure2 = document.querySelector(".three");
 }
 */
 
-function teste(classe, one, two, three){
-    if(!one.classList.contains(classe)){
-        one.classList.add(classe);
-        two.classList.remove(classe);
-        three.classList.remove(classe);
-    }
-   
-}
-
-
 function teste2(classe, one, two, three){
     if(!document.querySelector(one).classList.contains(classe)){
         document.querySelector(one).classList.add(classe);
         document.querySelector(two).classList.remove(classe);
         document.querySelector(three).classList.remove(classe);
+    }
+}
+
+
+function teste(classe, one, two){
+    if(!document.querySelector(one).classList.contains(classe)){
+        document.querySelector(one).classList.add(classe);
+        document.querySelector(two).classList.remove(classe);
     }
 }

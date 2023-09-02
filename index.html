@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/mobile.css">
-    <script src="js/nav.js" defer></script>
+    <script src="./js/api.js" defer></script>
+    <script src="./js/nav.js" defer></script>
 
 </head>
 <body>
@@ -15,33 +16,33 @@
         <h1>Ouricuri News</h1>
     </header>
 
-    <div id="diaria" class="container visible">
+    <div id="principais" class="container visible">
         <section class="conteudo">
             <a class="links" href="https://www.youtube.com/watch?v=eFiB_WLkE9M"><figure>
                 <img src="imgs/download (3).jpeg">
-                <figcaption>Nal do canal kak zkmcz kcmzk lkdld dkamsdkas kasdkas ksdakd.
-                    <b>Fonte:</b><a href="www.youtube.com"> YouTube</a>;</figcaption>
+                <figcaption>Nal do canal kak zkmcz kcmzk lkdld dkamsdkas kakad adka d akd a kad ad
+                    <b>Fonte:</b><a href="www.youtube.com"> YouTube</a></figcaption>
             </figure></a>
         </section>
         <section class="conteudo">
             <a><figure>
                 <img src="imgs/download (2).jpeg">
                 <figcaption>Manel Gomes.
-                    <b>Fonte:</b><a href="www.youtube.com"> YouTube</a>;</figcaption>
+                    <b>Fonte:</b><a href="www.youtube.com"> YouTube</a></figcaption>
             </figure></a>
         </section>
         <section class="conteudo">
             <a><figure>
                 <img src="imgs/download (1).jpeg">
                 <figcaption>Cleiton Rasta.
-                    <b>Fonte:</b><a href="www.youtube.com"> YouTube</a>;</figcaption>
+                    <b>Fonte:</b><a href="www.youtube.com"> YouTube</a></figcaption>
             </figure></a>
         </section>
         <section class="conteudo">
             <a><figure>
                 <img src="imgs/download.jpeg">
                 <figcaption>Ricardo Milos.
-                            <b>Fonte:</b><a href="www.youtube.com"> YouTube</a>;
+                            <b>Fonte:</b><a href="www.youtube.com"> YouTube</a>
                 </figcaption>
             </figure><a>
         </section>
@@ -53,10 +54,41 @@
             </figure></a>
         </section>
     </div>
-    <div id="todas" class="container">
-        <span>edasafasa</span>
 
+    <div id="todas" class="container">
+        <div id="page1" class="noticias visible">
+            <div class="barra">
+                <input id="barra-pesquisa" type="text" placeholder="Pesquisar">
+                <button onclick="teste('visible', '#page2', '#page1')">
+                    <figure>
+                        <img src="icons/lupa.png">
+                    </figure>
+                </button>
+            </div>
+            <table id="tabela">
+            </table>
+        </div>
+
+        <div id="page2" class="noticias">
+            <div id="botao-voltar">
+                <button id="voltar" onclick="teste('visible','#page1', '#page2')">
+                    <figure>
+                        <img src="icons/download.png">
+                    </figure>
+                </button>
+            </div>
+            <table>
+                <td class="conteudo">
+                    <figure>
+                        <img src="gif/cristiano-camera.gif">
+                        <figcaption></figcaption>
+                    </figure>
+                </td>
+            </table>
+        </div>
     </div>
+
+
     <div id="avaliar" class="container">
         <span>sajdkkdak</span>
     </div>
@@ -64,21 +96,21 @@
     <nav class="">
         <ul>
             <li class="one selecionado" onclick="teste2('selecionado', '.one', '.two', '.three'),
-            teste2('visible', '#diaria', '#todas', '#avaliar')">
+            teste2('visible', '#principais', '#todas', '#avaliar')">
                 <figure>
                     <img class="icons" src="icons/icons8-para-você-24.png">
                 </figure>
                 <span>Principais</span>
             </li>
             <li class="two" onclick="teste2('selecionado', '.two', '.one', '.three'),
-            teste2('visible', '#todas', '#diaria', '#avaliar')">
+            teste2('visible', '#todas', '#principais', '#avaliar')">
                 <figure >
                     <img class="icons" src="icons/icons8-notícias-32.png">
                 </figure>
                 <span>Todas</span>
             </li>
             <li class="three"onclick="teste2('selecionado', '.three', '.two', '.one'),
-            teste2('visible', '#avaliar', '#todas', '#diaria')">
+            teste2('visible', '#avaliar', '#todas', '#principais')">
                 <figure >
                     <img class="icons" src="icons/icons8-pixel-star-32.png">
                 </figure>
