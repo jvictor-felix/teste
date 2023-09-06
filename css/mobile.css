@@ -1,37 +1,5 @@
 @media(min-width: 280px) and (max-width: 1000px){
-    body{
-        background-color: #F0F8FF;
-    }
-
-    header{
-        background-color: white;
-        height: 46px;
-        padding: 5px;
-        font-size: 18px;
-        border-bottom-style: solid;
-        border-width: 1px;
-        border-color: #dcdcdc;
-        top: 0;
-        position: fixed;
-        width: 100%;
-    }
-
-    header h1{
-        height: 100%;
-        display: flex;
-        text-align: center;
-        font-size: 4.0rem;
-        font-family: fantasy;
-        justify-content: left;
-    }
-
-    .container{
-        display: none;
-        font-size: 1.6rem;
-        padding-top: 66px;
-        padding-bottom: 64px;
-        font-weight: bold;
-    }
+    
 
     .conteudo{
         display: flex;
@@ -69,12 +37,21 @@
 
         padding: 0 10px 0 10px;
         text-align: justify;
-        height: 34px;
+        height: 51.5px;
         overflow: hidden;
     }
 
+    #principais h6{
+        font-size: 1.6rem;
+        overflow: hidden;
+        height: 35px;
+        text-align: justify;
+    }
+
+
+
     #barra-pesquisa{
-        height: 30px;
+        height: 40px;
         padding: 0 10px;
         width: 90%;
         border-style: solid;
@@ -89,7 +66,7 @@
         max-width: 500px;
         padding: 0 10px;
         margin: 0 auto;
-        height: 30px;
+        height: 40px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -98,8 +75,8 @@
     
     .barra button{
         z-index: 1px;
-        width: 30px;
-        height: 32px;
+        width: 50px;
+        height: 42px;
         padding: 0;
         border-radius: 0px 10px 10px 0;
         border-style: solid;
@@ -108,9 +85,10 @@
         text-align: center;
     }
     
-    .barra button figure{
+    .barra button img{
         height: 24px;
         width: 24px;
+        margin: auto;
     }
     
     #barra-pesquisa:focus{
@@ -144,6 +122,19 @@
     #todas .conteudo{
         margin-bottom: 10px;
     }
+
+    #todas h6{
+        text-align: justify;
+        height: 73px;
+        font-size: 1.6rem;
+        overflow: hidden;
+    }
+
+    .a-figure{
+        font-weight: normal;
+        color: black;
+    }
+
     #todas .conteudo figure{
         width: 95%;
         border-style: solid;
@@ -168,8 +159,8 @@
         border-radius: 10px;
     }
     #todas .conteudo figcaption{
-        max-height: 85px;
-        padding: 7.5px 10px;
+        max-height: 90px;
+        padding: 5px 10px;
         overflow: hidden;
     }
 
@@ -184,6 +175,7 @@
         padding: 0 10px;
     }
     nav{
+        display: block;
         background-color: white;
         height: 64px;
         width: 100%;
@@ -238,4 +230,58 @@
     .visible{
         display: block;
     }
+
+    .avaliacao{
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .avaliacao div{
+        width: 100%;
+        text-align: center;
+    }
+
+    .avaliacao label{
+        font-weight: initial;
+        font-size: 1.8rem;
+    }
+
+    #nome:focus::placeholder, #comentario:focus::placeholder{
+        color: transparent;
+    }
+
+    #nome, #classificacao, #comentario{
+        height: 42px;
+        font-size: 1.6rem;
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 10px;
+        border-width: 1px;
+        border-color: #dcdcdc;
+        border-style: solid;
+        margin-bottom: 20px;
+        padding: 0 10px;
+        background-color: #fff;
+    }
+
+    #comentario{
+        height: 80px;
+        padding-top: 10px;
+    }
+
+    #enviar{
+        width: 100px;
+        height: 38px;
+        border-radius: 10px;
+        border-width: 1px;
+        border-style: solid;
+        background-color: #fff;
+        border-color: #dcdcdc;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+        
+    }
+
+
 }

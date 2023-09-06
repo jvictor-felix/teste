@@ -20,51 +20,58 @@
         <section class="conteudo">
             <a class="links" href="https://www.youtube.com/watch?v=eFiB_WLkE9M"><figure>
                 <img src="imgs/download (3).jpeg">
-                <figcaption>Nal do canal kak zkmcz kcmzk lkdld dkamsdkas kakad adka d akd a kad ad
-                    <b>Fonte:</b><a href="www.youtube.com"> YouTube</a></figcaption>
+                <figcaption>
+                    <h6>Nal do canal kak zkmcz kcmzk lkdld dkamsdkas kakad adka d akd a kad ad lasla lsamsl lsalsm laslas lamslas laslas slasla lasla</h6>
+                    <span><b>Fonte:</b><a href="www.youtube.com"> YouTube</a></span>
+                </figcaption>
             </figure></a>
         </section>
         <section class="conteudo">
             <a><figure>
                 <img src="imgs/download (2).jpeg">
-                <figcaption>Manel Gomes.
-                    <b>Fonte:</b><a href="www.youtube.com"> YouTube</a></figcaption>
+                <figcaption>
+                    <h6>Manel Gomes.</h6>
+                    <span><b>Fonte:</b><a href="www.youtube.com"> YouTube</a><span>
+                    </figcaption>
             </figure></a>
         </section>
         <section class="conteudo">
             <a><figure>
                 <img src="imgs/download (1).jpeg">
-                <figcaption>Cleiton Rasta.
-                    <b>Fonte:</b><a href="www.youtube.com"> YouTube</a></figcaption>
+                <figcaption>
+                    <h6>Cleiton Rasta.</h6>
+                    <span><b>Fonte:</b><a href="www.youtube.com"> YouTube</a></span>
+                </figcaption>
             </figure></a>
         </section>
         <section class="conteudo">
             <a><figure>
                 <img src="imgs/download.jpeg">
-                <figcaption>Ricardo Milos.
-                            <b>Fonte:</b><a href="www.youtube.com"> YouTube</a>
+                <figcaption>
+                    <h6>Ricardo Milos.</h6>
+                    <span><b>Fonte:</b><a href="www.youtube.com"> YouTube</a></span>
                 </figcaption>
             </figure><a>
         </section>
         <section class="conteudo">
             <a href=""><figure>
                 <img src="imgs/images.jpeg">
-                <figcaption>Mia Khalifa.
-                    <b>Fonte:</b><a href="www.youtube.com"> Xvidros</a></figcaption>
+                <figcaption>
+                    <h6>Mia Khalifa.</h6>
+                    <span><b>Fonte:</b><a href="www.youtube.com"> Xvidros</a></span>
+                </figcaption>
             </figure></a>
         </section>
     </div>
 
     <div id="todas" class="container">
         <div id="page1" class="noticias visible">
-            <div class="barra">
+            <form class="barra" action="GET">
                 <input id="barra-pesquisa" type="text" placeholder="Pesquisar">
                 <button onclick="teste('visible', '#page2', '#page1')">
-                    <figure>
-                        <img src="icons/lupa.png">
-                    </figure>
+                    <img src="icons/lupa.png">
                 </button>
-            </div>
+            </form>
             <table id="tabela">
             </table>
         </div>
@@ -77,20 +84,31 @@
                     </figure>
                 </button>
             </div>
-            <table>
-                <td class="conteudo">
-                    <figure>
-                        <img src="gif/cristiano-camera.gif">
-                        <figcaption></figcaption>
-                    </figure>
-                </td>
+            <table id="tabela-pesquisa">
             </table>
         </div>
     </div>
 
 
     <div id="avaliar" class="container">
-        <span>sajdkkdak</span>
+        <form class="avaliacao">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+
+            <label>Deixe uma nota para o site:</label>
+            <select form="#avalicao" id="classificacao">
+                <option for="classificacao"value="Ruim">Ruim</option>
+                <option value="DaParaMelhorar">Dá para melhorar</option>
+                <option value="Bom">Bom</option>
+                <option value="Excelente">Excelente</option>
+            </select>
+
+            <label for="comentario">Deixe seu comentário:</label>
+            <textarea id="comentario" placeholder="Digite aqui"></textarea>
+            <div>
+                <button id="enviar">Enviar</button>
+            </div>
+        </form>
     </div>
 
     <nav class="">

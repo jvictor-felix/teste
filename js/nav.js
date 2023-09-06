@@ -43,3 +43,10 @@ function teste(classe, one, two){
         document.querySelector(two).classList.remove(classe);
     }
 }
+
+
+
+window.addEventListener("resize", ()=> {
+    var height = window.innerHeight;
+    console.log(height);
+})
