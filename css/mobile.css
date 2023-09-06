@@ -231,6 +231,11 @@
         display: block;
     }
 
+    #avaliar{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .avaliacao{
         max-width: 500px;
         margin: 0 auto;
