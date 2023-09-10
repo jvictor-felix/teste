@@ -14,17 +14,15 @@ function criaLinha(noticias){
     h6 = document.createElement('h6');
     span = document.createElement('span');
     a = document.createElement('a');
-    a_figure = document.createElement('a');
+    tr = document.createElement('tr');
 
     a.setAttribute("href", noticias.link);
-    a_figure.setAttribute("href", noticias.link);
 
     
     span.innerHTML = "Fonte: ";
     h6.innerHTML = noticias.title;
     a.innerHTML = noticias.creator;
     img.setAttribute("src", "gif/cristiano-camera.gif");
-    
     
     span.appendChild(a);
     figcaption.appendChild(h6);
@@ -36,7 +34,9 @@ function criaLinha(noticias){
     linha.appendChild(figure);
 
     linha.classList.add("conteudo");
-    return linha;
+    tr.appendChild(linha);
+    console.log(tr);
+    return tr;
 }
 
 function main(){
