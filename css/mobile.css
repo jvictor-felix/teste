@@ -129,10 +129,6 @@
         height: 38px;
     }
 
-    #todas .conteudo{
-        margin-bottom: 5px;
-    }
-
     #todas h6{
         text-align: justify;
         height: 73px;
@@ -152,6 +148,7 @@
     #todas .conteudo figure{
         width: 95%;
         max-width: 480px;
+        margin-bottom: 5px;
     }
 
     #todas .conteudo img{
@@ -163,6 +160,11 @@
 
         background-color: black;
         border-radius: 10px;
+    }
+
+    #todas .conteudo figcaption{
+        height: 80px;
+        padding: 5px 10px;
     }
 
     .avaliacao{
