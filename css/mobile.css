@@ -194,5 +194,15 @@
         
     }
 
+   @keyframes slide{
+
+    from{
+        margin-left: 93%;
+    }
+
+    to{
+        margin-left: 0%;
+    }
+   }
 
 }
