@@ -15,6 +15,7 @@
 
     .container{
         padding-bottom: 64px;
+        overflow: hidden;
     }
 
 
