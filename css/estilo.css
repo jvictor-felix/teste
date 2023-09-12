@@ -72,7 +72,6 @@ nav ul li figure{
 }
 
 
-
 .container{
     display: none;
     font-size: 1.8rem;
@@ -84,11 +83,12 @@ nav ul li figure{
 }
 
 @keyframes slide{
+
     from{
-        margin-left: 100%;
+        margin-left: 98%;
     }
     to{
-        margin-left: 0%;
+        margin-left: 0;
     }
 }
 
@@ -311,3 +311,5 @@ td{
     margin-bottom: 20px;
     
 }
+
+

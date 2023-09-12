@@ -139,6 +139,8 @@
 
     #todas span{
         font-size: 1.6rem;
+        height: 17px;
+        overflow: hidden;
     }
 
     .a-figure{
